@@ -3,7 +3,9 @@ set -e
 
 mkdir -p ~/.config/alacritty
 
-ln -s alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+rm ~/.config/alacritty/alacritty.yml
+ln -s `pwd`/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 
-ln -s tmux/.tmux.conf ~/.tmux.conf
+rm ~/.tmux.conf
+ln -s `pwd`/tmux/.tmux.conf ~/.tmux.conf
 
